@@ -351,7 +351,7 @@ SILENCED_SYSTEM_CHECKS = (
 )
 
 STATIC_ROOT = os.path.realpath(os.path.join(PROJECT_ROOT, "static"))
-STATIC_URL = "/_static/{version}/"
+STATIC_URL = "_static/{version}/"
 
 # various middleware will use this to identify resources which should not access
 # cookies
