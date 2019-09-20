@@ -47,7 +47,7 @@ exports[`SharedGroupDetails renders 1`] = `
               >
                 <a
                   className="logo"
-                  href="/"
+                  href=""
                 >
                   <span
                     className="icon-sentry-logo-full"
@@ -1011,7 +1011,7 @@ exports[`SharedGroupDetails renders 1`] = `
                         </div>
                         <a
                           className="icon-sentry-logo"
-                          href="/"
+                          href=""
                           tabIndex={-1}
                         />
                         <Hook

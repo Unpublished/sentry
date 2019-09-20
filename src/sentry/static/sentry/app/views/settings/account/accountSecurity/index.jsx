@@ -41,7 +41,7 @@ class AccountSecurity extends AsyncView {
   }
 
   handleSessionClose = () => {
-    this.api.request('/auth/', {
+    this.api.request('auth/', {
       method: 'DELETE',
       data: {all: true},
       success: () => {

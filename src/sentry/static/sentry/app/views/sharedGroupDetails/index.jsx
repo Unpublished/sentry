@@ -106,7 +106,7 @@ const SharedGroupDetails = createReactClass({
           <div className="container">
             <div className="box box-modal">
               <div className="box-header">
-                <a className="logo" href="/">
+                <a className="logo" href="">
                   <span className="icon-sentry-logo-full" />
                 </a>
                 {this.state.group.permalink && (

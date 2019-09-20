@@ -63,7 +63,7 @@ class AccountAuthorizations extends AsyncView {
       }),
       async () => {
         try {
-          await this.api.requestPromise('/api-authorizations/', {
+          await this.api.requestPromise('api-authorizations/', {
             method: 'DELETE',
             data: {authorization: authorization.id},
           });

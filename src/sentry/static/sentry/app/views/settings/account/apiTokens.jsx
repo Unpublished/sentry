@@ -41,7 +41,7 @@ class ApiTokens extends AsyncView {
       }),
       async () => {
         try {
-          await this.api.requestPromise('/api-tokens/', {
+          await this.api.requestPromise('api-tokens/', {
             method: 'DELETE',
             data: {token: token.token},
           });

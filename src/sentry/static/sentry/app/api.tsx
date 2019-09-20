@@ -113,7 +113,7 @@ export class Client {
     if (isUndefined(options)) {
       options = {};
     }
-    this.baseUrl = options.baseUrl || '/api/0';
+    this.baseUrl = options.baseUrl || 'api/0';
     this.activeRequests = {};
   }
 

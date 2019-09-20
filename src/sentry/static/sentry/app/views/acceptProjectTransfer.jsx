@@ -19,7 +19,7 @@ class AcceptProjectTransfer extends AsyncView {
   }
 
   handleSubmit = formData => {
-    this.api.request('/accept-transfer/', {
+    this.api.request('accept-transfer/', {
       method: 'POST',
       data: {
         data: this.props.location.query.data,

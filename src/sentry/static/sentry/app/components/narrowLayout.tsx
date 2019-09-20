@@ -39,7 +39,7 @@ class NarrowLayout extends React.Component<Props> {
         <div className="container" style={{maxWidth: this.props.maxWidth}}>
           <div className="box box-modal">
             <div className="box-header">
-              <a href="/">
+              <a href="">
                 <span className="icon-sentry-logo" />
               </a>
               {this.props.showLogout && (
