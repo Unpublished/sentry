@@ -12,7 +12,7 @@ class Main extends React.Component {
 
   render() {
     return (
-      <Router basename="/sentry" history={browserHistory}>
+      <Router basename="/sentry/" history={browserHistory}>
         {routes()}
       </Router>
     );
