@@ -159,7 +159,7 @@ class OrganizationMixin(object):
         elif not features.has("organizations:create"):
             return self.respond("sentry/no-organization-access.html", status=403)
         else:
-            url = "/organizations/new/"
+            url = request.META['SCRIPT_NAME'] + "/organizations/new/"
         return HttpResponseRedirect(url)
 
 

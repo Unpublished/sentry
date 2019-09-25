@@ -104,8 +104,8 @@ def get_org_redirect_url(request, active_organization):
     if active_organization:
         return active_organization.get_url()
     if not features.has("organizations:create"):
-        return "/auth/login/"
-    return "/organizations/new/"
+        return request.META['SCRIPT_NAME'] + "/auth/login/"
+    return request.META['SCRIPT_NAME'] + "/organizations/new/"
 
 
 def get_login_redirect(request, default=None):
