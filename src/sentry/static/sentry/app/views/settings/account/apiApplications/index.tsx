@@ -35,7 +35,7 @@ class ApiApplications extends AsyncView<Props, State> {
     addLoadingMessage();
 
     try {
-      const app = await this.api.requestPromise('/api-applications/', {
+      const app = await this.api.requestPromise('api-applications/', {
         method: 'POST',
       });
 

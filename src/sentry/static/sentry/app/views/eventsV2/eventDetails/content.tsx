@@ -284,7 +284,7 @@ const EventMetadata = (props: {
 }) => {
   const {event, organization, projectId} = props;
 
-  const eventJsonUrl = `/api/0/projects/${organization.slug}/${projectId}/events/${
+  const eventJsonUrl = `api/0/projects/${organization.slug}/${projectId}/events/${
     event.eventID
   }/json/`;
 

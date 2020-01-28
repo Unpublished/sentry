@@ -47,7 +47,7 @@ class Row extends React.Component<Props, State> {
         addLoadingMessage();
 
         try {
-          await api.requestPromise(`/api-applications/${app.id}/`, {
+          await api.requestPromise(`api-applications/${app.id}/`, {
             method: 'DELETE',
           });
 
